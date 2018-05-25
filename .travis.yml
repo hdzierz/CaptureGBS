@@ -2,6 +2,7 @@ sudo: required
 
 script:
   - curl -s https://get.nextflow.io | bash 
+  - ./nextflow
 
 notifications:
   irc:
