@@ -1,0 +1,13 @@
+sudo: required
+
+script:
+  - curl -s https://get.nextflow.io | bash 
+
+notifications:
+  irc:
+    channels:
+      - "irc.freenode.org#inasafe"
+    use_notice: true
+
+  email:
+    - helge.dzierzon@plantandfood.co.nz
