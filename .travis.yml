@@ -3,8 +3,6 @@ sudo: required
 install:
   - sudo apt-get -y update
   - sudo apt-get install -y tcl tcl8.4-dev
-  - wget http://downloads.sourceforge.net/project/modules/Modules/modules-3.2.9/modules
-  - tar xvvf modules-3.2.9c.tar.gz
 
 
 script:
