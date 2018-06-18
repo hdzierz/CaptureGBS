@@ -1,0 +1,21 @@
+sudo: required
+
+install:
+  - sudo apt-get -y update
+  - sudo apt-get install -y environment-modules
+  
+
+script:
+  - source /usr/share/modules/init/bash
+  - module avail
+  - curl -s https://get.nextflow.io | bash 
+  - ./nextflow
+
+notifications:
+  irc:
+    channels:
+      - "irc.freenode.org#inasafe"
+    use_notice: true
+
+  email:
+    - helge.dzierzon@plantandfood.co.nz
