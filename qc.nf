@@ -47,6 +47,7 @@ process trimm{
     java -jar -Xms8096m -Xmx16192m \$TRIMMOMATIC PE -threads 1 $reads \
     ${pair_id}.trim.R1.fastq.gz ${pair_id}.trimUn.R1.fastq.gz ${pair_id}.trim.R2.fastq.gz  ${pair_id}.trimUn.R2.fastq.gz  \
     ${params.trimmomatico}
+
     """
 
 }
